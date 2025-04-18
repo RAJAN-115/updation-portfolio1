@@ -3,6 +3,7 @@ import { Footer } from '@/components/footer';
 import { Navbar } from '@/components/navbar';
 import { ThemeProvider } from '@/components/theme-provider';
 import { VoiceNavigation } from '@/components/voice-navigation';
+import { FloatingActions } from '@/components/ai/floating-actions';
 import type { Metadata, Viewport } from 'next';
 import { Inter } from 'next/font/google';
 import type React from 'react';
@@ -72,6 +73,7 @@ export default function RootLayout({
           <main className="flex-1">{children}</main>
           <Footer />
           <VoiceNavigation />
+          <FloatingActions/>
         </ThemeProvider>
       </body>
     </html>
